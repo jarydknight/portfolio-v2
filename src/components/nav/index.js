@@ -1,5 +1,6 @@
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/solid";
+import { Popover, PopoverButton, PopoverPanel, CloseButton } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { SunIcon, MoonIcon, ComputerDesktopIcon, Cog6ToothIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 // Site nav bar
 function Nav () {
@@ -20,6 +21,21 @@ function Nav () {
         {
             name: "Tech",
             href:"/Tech"
+        }
+    ];
+
+    const themeOptions = [
+        {
+            name: "Light",
+            icon: <SunIcon className="size-6 mr-4"/>
+        },
+        {
+            name: "Dark",
+            icon: <MoonIcon className="size-6 mr-4"/>
+        },
+        {
+            name: "System",
+            icon: <ComputerDesktopIcon className="size-6 mr-4"/>
         }
     ];
 
@@ -46,7 +62,7 @@ function Nav () {
             </Popover>
 
             {/* Nav bar in desktop view */}
-            <div className="hidden md:block h-16 w-full my-8 col-start-2 col-span-3 justify-items-center rounded-full bg-zinc-200 dark:bg-zinc-800 content-center">
+            <div className="hidden md:block h-16 w-full my-8 col-start-2 col-span-3 justify-items-center rounded-full shadow-3xl shadow-zinc-800 bg-white/90 dark:bg-zinc-800 ring-1 ring-zinc-800/5 content-center">
                 <div className="w-content flex justify-around">
                 {
                     navOptions.map((item, index) => {
@@ -61,7 +77,25 @@ function Nav () {
                 }
                 </div>
             </div>
-            <MoonIcon className="h-10 w-10 my-8 mx-4 justify-self-end md:justify-self-center self-center"/>
+            {/* <MoonIcon className="h-7 w-7 my-8 mx-4 justify-self-end md:justify-self-center self-center"/> */}
+            <Popover className="my-8 mx-4 justify-self-end md:justify-self-center self-center">
+                <PopoverButton className="flex">
+                    <p>Settings</p>
+                    <Cog6ToothIcon className="size-6 ml-2" />
+                </PopoverButton>
+                <PopoverPanel anchor="bottom">
+                    {
+                        themeOptions.map((item, index) => {
+                            return (
+                                <CloseButton key={index} className="flex my-2">
+                                    {item.icon}
+                                    <p>{item.name}</p>
+                                </CloseButton>
+                            )
+                        })
+                    }
+                </PopoverPanel>
+            </Popover>
         </div>
            
     )
