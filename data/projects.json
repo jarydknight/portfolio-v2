@@ -1,34 +1,42 @@
 [
     {
-        "title": "",
-        "description": "",
+        "title": "Ticket Web App",
+        "description": "An IT support ticket web application created using the MERN stack",
         "image": "",
         "deployedLink": "",
-        "githubLink": "",
-        "tags": ""
+        "githubLink": "https://github.com/jarydknight/Ticket-Web-App",
+        "tags": "#MongoDB #Express #React"
     },
     {
-        "title": "",
-        "description": "",
+        "title": "Travel Blog",
+        "description": "A travel blog project built using Javascript, Node.js, Handlebars, Express.js, MySQL, Sequalize ORM, Amazon S3",
         "image": "",
         "deployedLink": "",
-        "githubLink": "",
-        "tags": ""
+        "githubLink": "https://github.com/jarydknight/travel-blog",
+        "tags": "#Express #NoSQL #AWS S3"
     },
     {
-        "title": "",
-        "description": "",
+        "title": "Social Network API",
+        "description": "Social medial API that can complete CRUD operations on a NoSQL database using Mongoose",
         "image": "",
         "deployedLink": "",
-        "githubLink": "",
-        "tags": ""
+        "githubLink": "https://github.com/jarydknight/social-network-api",
+        "tags": "#NoSQL #Mongoose #Express"
     },
     {
-        "title": "",
-        "description": "",
+        "title": "E-Commerce",
+        "description": "The purpose of this project is to use the ORM Sequalize (NPM package) to complete a back end for an e-commerce application and execute CRUD operations on a database",
         "image": "",
         "deployedLink": "",
-        "githubLink": "",
-        "tags": ""
+        "githubLink": "https://github.com/jarydknight/e-commerce",
+        "tags": "#Express #Sequalize #MySQL2"
+    },
+    {
+        "title": "Weather Dashboard",
+        "description": "The purpose of this project is create a weather dashboard to showcase my skills working with third party APIs.",
+        "image": "",
+        "deployedLink": "https://jarydknight.github.io/weather-dashboard/",
+        "githubLink": "https://github.com/jarydknight/weather-dashboard",
+        "tags": "#API #jQuery #Bootstrap"
     }
 ]
