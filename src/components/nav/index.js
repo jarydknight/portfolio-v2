@@ -19,6 +19,10 @@ function Nav () {
             href:"/projects"
         },
         {
+            name: "Experience",
+            href: "/experience"
+        },
+        {
             name: "Tech",
             href:"/Tech"
         }
@@ -40,20 +44,20 @@ function Nav () {
     ];
 
     return (
-        <div className="grid grid-cols-5 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-7 justify-between md:justify-items-center px-4">
             {/* Nav bar in mobile view */}
-            <Popover as="div" className="md:hidden h-16 my-8 col-start-2 col-span-3 justify-items-center">
+            <Popover as="div" className="md:hidden h-16 my-8 md:col-start-1 md:col-span-3 justify-items-center">
                 <PopoverButton className="p-2 justify-self-center">
                     <Bars3Icon className="h-10 w-10"/>
                 </PopoverButton>
-                <PopoverPanel className="absolute left-0 right-0 h-dvh justify-center backdrop-blur-md">
+                <PopoverPanel className="absolute left-0 right-0 w-full h-dvh justify-center backdrop-blur-lg">
                     {
                         navOptions.map((item, index) => {
                             return (
                                 <div key={index} className="my-8">
-                                    <Link href={item.href} className="text-center text-3xl">
-                                        <p>{item.name}</p>
-                                    </Link>
+                                    <CloseButton as={Link} href={item.href} className="text-center text-3xl">
+                                            <p>{item.name}</p>
+                                    </CloseButton>
                                 </div>
                             )
                         })
@@ -62,7 +66,7 @@ function Nav () {
             </Popover>
 
             {/* Nav bar in desktop view */}
-            <div className="hidden md:block h-16 w-full my-8 col-start-2 col-span-3 justify-items-center rounded-full shadow-3xl shadow-zinc-800 bg-white/90 dark:bg-zinc-800 ring-1 ring-zinc-800/5 content-center">
+            <div className="hidden md:block h-16 w-full my-8 col-start-2 col-span-5 justify-items-center rounded-full shadow-3xl shadow-zinc-800 bg-white/90 dark:bg-zinc-800 ring-1 ring-zinc-800/5 content-center">
                 <div className="w-content flex justify-around">
                 {
                     navOptions.map((item, index) => {
@@ -77,13 +81,14 @@ function Nav () {
                 }
                 </div>
             </div>
-            {/* <MoonIcon className="h-7 w-7 my-8 mx-4 justify-self-end md:justify-self-center self-center"/> */}
+
+            {/*Settings popover to select theme*/}
             <Popover className="my-8 mx-4 justify-self-end md:justify-self-center self-center">
                 <PopoverButton className="flex">
                     <p>Settings</p>
                     <Cog6ToothIcon className="size-6 ml-2" />
                 </PopoverButton>
-                <PopoverPanel anchor="bottom">
+                <PopoverPanel anchor="bottom" className="absolute backdrop-blur-lg p-2 rounded-xl mt-2">
                     {
                         themeOptions.map((item, index) => {
                             return (

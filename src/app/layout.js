@@ -21,8 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://kit.fontawesome.com/9c453524b4.js" async crossorigin="anonymous"></script>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-slate-50 grid`}
+        id="body" className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-slate-50 flex flex-col h-svh`}
       >
         <Nav />
         {children}

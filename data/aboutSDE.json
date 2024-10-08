@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Programming Languages",
+        "listItems": [
+            {
+                "name": "Javascript",
+                "description": "" 
+            },
+            {
+                "name": "Python",
+                "description": ""
+            },
+            {
+                "name": "SQL",
+                "description": ""
+            },
+            {
+                "name": "HTML",
+                "description": ""
+            },
+            {
+                "name": "CSS",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "title": "Frameworks",
+        "listItems": [
+            {
+                "name": "Next.js",
+                "description": ""
+            },
+            {
+                "name": "Express",
+                "description": ""
+            },
+            {
+                "name": "React",
+                "description": ""
+            },
+            {
+                "name": "Bootstrap",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "title": "Technologies",
+        "listItems":[
+            {
+                "name": "AWS S3",
+                "description": ""
+            },{
+                "name": "Heroku",
+                "description": ""
+            },{
+                "name": "Vercel",
+                "description": ""
+            }
+        ]
+    }
+]
