@@ -4,32 +4,11 @@
         "listItems": [
             {
                 "name": "English",
-                "description": "(native)"
+                "description": "(Native)"
             },
             {
                 "name": "Mandarin",
-                "description": "(beginner)"
-            }
-        ]
-    },
-    {
-        "title": "Sports",
-        "listItems": [
-            {
-                "name": "Volleyball",
-                "description": ""
-            },
-            {
-                "name": "Tennis",
-                "description": ""
-            },
-            {
-                "name": "Badminton",
-                "description": ""
-            },
-            {
-                "name": "Squash",
-                "description": ""
+                "description": "(Beginner)"
             }
         ]
     },
@@ -42,40 +21,15 @@
             },
             {
                 "name": "Health & Fitness",
-                "description": ""
+                "description": "Volleyball, Tennis, Bouldering"
             },
             {
                 "name": "Anime",
-                "description": "Recently Watching: One Piece"
+                "description": "Currently Watching: One Piece"
             },
             {
                 "name": "Movies",
                 "description": "Favorites: Dune, Star Wars, Interstellar"
-            },
-            {
-                "name": "Fashion",
-                "description": ""
-            },
-            {
-                "name": "Fishing",
-                "description": ""
-            }
-        ]
-    },
-    {
-        "title": "Gaming",
-        "listItems": [
-            {
-                "name": "FIFA",
-                "description": ""
-            },
-            {
-                "name": "Call of Duty",
-                "description": ""
-            },
-            {
-                "name": "Smash Bros",
-                "description": "Main: Marth"
             }
         ]
     },
@@ -104,7 +58,7 @@
             },
             {
                 "name": "USA",
-                "description": "New York, Chicago, Portland"
+                "description": "New York, Chicago, Boston, Portland"
             }
         ]
     }

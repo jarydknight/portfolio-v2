@@ -1,3 +1,4 @@
+import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/nav";
@@ -20,15 +21,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="min-h-screen flex flex-col">
       <head>
         <script src="https://kit.fontawesome.com/9c453524b4.js" async crossorigin="anonymous"></script>
       </head>
       <body
-        id="body" className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black bg-slate-50 flex flex-col h-svh`}
+        id="body" className={`${geistSans.variable} ${geistMono.variable} antialiase flex flex-col min-h-screen text-black dark:text-white`}
       >
-        <Nav />
-        {children}
+        <ThemeProvider attribute="class">
+          <Nav />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

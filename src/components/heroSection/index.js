@@ -4,7 +4,7 @@ import Contact from "../contact/index";
 
 function HeroSection () {
     return (
-        <div className="grid md:grid-cols-2 md:grid-rows-2 p-8">
+        <div className="grid md:grid-cols-2 md:grid-rows-2 p-8 bg-zinc-50/50 dark:bg-black">
             
                 <div className="order-2 md:order-1 row-span-2">
                     <h1 className="text-5xl py-2 px-4">Hi, I am Jaryd Knight. </h1>

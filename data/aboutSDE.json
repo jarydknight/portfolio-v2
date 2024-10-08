@@ -4,23 +4,23 @@
         "listItems": [
             {
                 "name": "Javascript",
-                "description": "" 
+                "description": "As a versatile programming language for web development, JavaScript has been central to my work, enabling me to build dynamic and interactive web applications, resulting in engaging and responsive user experiences." 
             },
             {
                 "name": "Python",
-                "description": ""
+                "description": "With Python’s general-purpose nature, I’ve developed backend systems, automated tasks, and worked efficiently with data, writing clean, maintainable code that enhances productivity."
             },
             {
                 "name": "SQL",
-                "description": ""
+                "description": "SQL’s power in managing relational databases has been crucial in my ability to build data-driven applications, giving me the skills to effectively query and manage structured data."
             },
             {
                 "name": "HTML",
-                "description": ""
+                "description": "HTML has provided the essential structure for my web projects, allowing me to create accessible, well-organized websites and laying the groundwork for my front-end development skills."
             },
             {
                 "name": "CSS",
-                "description": ""
+                "description": "CSS has enabled me to design visually appealing and responsive layouts, deepening my understanding of UI/UX principles and ensuring a consistent aesthetic across different devices."
             }
         ]
     },
@@ -29,19 +29,19 @@
         "listItems": [
             {
                 "name": "Next.js",
-                "description": ""
+                "description": " leverage Next.js for server-side rendering and static site generation, optimizing my development process to build fast, scalable, and high-performing web applications."
             },
             {
                 "name": "Express",
-                "description": ""
+                "description": "Using Express as a backend framework has allowed me to create robust APIs and backend services, enhancing my server-side development skills and understanding of middleware."
             },
             {
                 "name": "React",
-                "description": ""
+                "description": "React’s component-based architecture has been fundamental in my approach to building modular and reusable UIs, leading to efficient, maintainable, and scalable codebases."
             },
             {
                 "name": "Bootstrap",
-                "description": ""
+                "description": "Bootstrap’s responsive design components have expedited my development, enabling me to create consistent and mobile-friendly layouts quickly without sacrificing design quality."
             }
         ]
     },
@@ -50,12 +50,21 @@
         "listItems":[
             {
                 "name": "AWS S3",
-                "description": ""
+                "description": "AWS S3 has taught me about cloud storage solutions, improving my deployment efficiency and enabling scalable management of static assets and application data."
             },{
                 "name": "Heroku",
-                "description": ""
+                "description": "Deploying applications on Heroku has simplified my workflow, allowing me to implement continuous integration and delivery processes for more efficient development and management."
             },{
                 "name": "Vercel",
+                "description": "Vercel has been an excellent tool for deploying frontend projects, particularly with Next.js, ensuring fast build times, seamless integrations, and efficient deployment, which enhances my development agility."
+            }
+        ]
+    },
+    {
+        "title": "Hardware",
+        "listItems": [
+            {
+                "name": "Macbook Pro 2019",
                 "description": ""
             }
         ]
