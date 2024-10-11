@@ -4,14 +4,19 @@ import Contact from "../contact/index";
 import ExperienceSection from "../experience";
 
 function HeroSection () {
+
+    const heroIntroText = `Welcome! I’m Jaryd Knight, a Toronto-based software developer specializing in full-stack web development. I build efficient and scalable solutions using modern technologies like the MERN stack, NextJS, and Tailwind CSS, with expertise in JavaScript, HTML, CSS, SQL, and Python. I’m passionate about creating dynamic, accessible web applications and deploying solutions on platforms like Vercel and Heroku.
+
+    With experience in frontend interfaces, backend architecture, and Agile methodologies, I deliver quality software that provides seamless user experiences. Explore my portfolio to see how I solve problems with creativity and precision, bringing ideas to life through code!`
+
     return (
         <div className="grid md:grid-cols-2 md:grid-rows-2 p-8 gap-4 bg-zinc-50/50 dark:bg-black">
             
                 <div className="order-2 md:order-1">
-                    <h1 className="text-5xl py-2 px-4">Hi, I am Jaryd Knight. </h1>
-                    <h2 className="text-3xl px-4 mb-8">I am a Software Developer in Toronto.</h2>
-                    <p className="p-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius pharetra commodo. Suspendisse vulputate tincidunt tortor sed porttitor. Sed at enim at nisl ornare gravida. Ut ut arcu scelerisque mauris eleifend condimentum. Nulla euismod, ipsum nec posuere consequat, enim turpis tempus purus, sit amet facilisis nunc erat et velit. Praesent rhoncus non dolor ut mattis. Suspendisse ac volutpat ligula. In a tortor quam. Sed lobortis tincidunt mi, id pharetra turpis eleifend sed. Donec commodo purus sed tellus dictum, sed egestas risus scelerisque. Praesent sodales lorem ipsum, nec scelerisque diam facilisis et. Mauris sagittis at velit ut tempor. Sed at congue.
+                    <h1 className="text-5xl py-2 px-4">Jaryd Knight </h1>
+                    <h2 className="text-3xl px-4 mb-8">Software Developer</h2>
+                    <p className="p-4 whitespace-pre-line">
+                        {heroIntroText}
                     </p>
                 </div>
                 <ExperienceSection />

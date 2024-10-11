@@ -29,7 +29,7 @@ console.log(selectedItem)
                     <h2 className="text-3xl font-bold text-start">{menuItems[selectedItem].name}</h2>
                     <ChevronDownIcon className="size-12 ml-4"/>
                 </PopoverButton>
-                <PopoverPanel className="absolute left-0 w-auto rounded-3xl p-4  my-2 backdrop-blur-lg">
+                <PopoverPanel className="absolute z-0 left-0 w-auto rounded-3xl p-4  my-2 backdrop-blur-lg">
                     {
                         menuItems.map((item, index) => {
                             return (

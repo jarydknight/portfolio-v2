@@ -10,7 +10,7 @@ function ExperienceSection () {
                 return (
                     category.items.map((item, index) => {
                         return (
-                            <div key={index} className="grid my-2 h-fit hover:text-purple-500/75">
+                            <div key={index} className="grid my-2 h-fit">
                                 <div className="flex">
                                 {
                                     category.category === "work" ?  <i className="fa-solid fa-briefcase h-6 w-6"></i> : <i className="fa-solid fa-graduation-cap h-6 w-6"></i>

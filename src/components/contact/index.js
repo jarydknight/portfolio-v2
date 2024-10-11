@@ -1,4 +1,5 @@
 import { Button } from "@headlessui/react";
+import Link from "next/link";
 
 function Contact () {
     const contactMethods = [
@@ -6,25 +7,25 @@ function Contact () {
             name: "LinkedIn",
             icon: <i className="fa-brands fa-linkedin text-3xl"></i>,
             description: "Connect on LinkedIn",
-            link:""
+            link:"https://linkedin.com/in/jaryd-k"
         },
         {
             name: "GitHub",
             icon: <i className="fa-brands fa-github text-3xl"></i>,
             description: "Follow me on GitHub",
-            link:""
+            link:"https://github.com/jarydknight"
         },
         {
             name: "Instagram",
             icon: <i className="fa-brands fa-instagram text-3xl"></i>,
             description: "Follow me on Instagram",
-            link:""
+            link:"https://instagram.com/jarydknight"
         },
         {
             name: "Email",
             icon: <i className="fa-regular fa-envelope text-3xl"></i>,
             description: "Email me at jarydknightdev@gmail.com",
-            link:""
+            link:"mailto:jarydknightdev@gmail.com"
         }
     ]
 
@@ -34,10 +35,10 @@ function Contact () {
             {
                 contactMethods.map((item, index) => {
                     return (
-                        <Button key={index} className="flex mb-6 hover:text-purple-500/75">
+                        <Link key={index} href={item.link} target="blank" className="flex mb-6 hover:text-purple-500/75">
                             {item.icon}
                             <p className="text-lg font-medium ml-4">{item.description}</p>
-                        </Button>
+                        </Link>
                     )
                 })
             }

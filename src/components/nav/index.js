@@ -5,25 +5,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import ThemeToggleButton from "../themeToggleButton";
 import { useEffect, useState } from "react";
+import navOptions from "../../../data/navOptions.json";
 
 // Site nav bar
 function Nav () {
-
-    const navOptions = [
-        {
-            name: "Home",
-            href:"/"
-        },
-        {
-            name: "About",
-            href:"/about"
-        },
-        {
-            name: "Projects",
-            href:"/projects"
-        }
-    ];
-
     const [navOpen, setNavOpen] = useState(false);
     useEffect(() => {
         if (navOpen) {
@@ -42,11 +27,11 @@ function Nav () {
         <div className="grid grid-cols-2 md:grid-cols-7 justify-between md:justify-items-center px-4 bg-zinc-50/50 dark:bg-black">
             {/* Nav bar in mobile view */}
             <Popover as="div" className="group md:hidden h-16 my-8 md:col-start-1 md:col-span-3 justify-items-center">
-                <PopoverButton className="absolute p-2 justify-self-center z-10" as="button" onClick={()=>setNavOpen(!navOpen)}>
+                <PopoverButton className="absolute p-2 justify-self-center z-20 hover:text-purple-500/75" as="button" onClick={()=>setNavOpen(!navOpen)}>
                     <Bars3Icon className="h-10 w-10 group-data-[open]:hidden"/>
                     <XMarkIcon className="h-10 w-10 hidden group-data-[open]:block" />
                 </PopoverButton>
-                <PopoverPanel className="fixed inset-0 justify-center backdrop-blur-lg z-0 pt-16">
+                <PopoverPanel className="fixed inset-0 justify-center backdrop-blur-lg z-10 pt-16">
                     {
                         navOptions.map((item, index) => {
                             return (
