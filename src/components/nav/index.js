@@ -21,10 +21,6 @@ function Nav () {
         {
             name: "Projects",
             href:"/projects"
-        },
-        {
-            name: "Experience",
-            href: "/experience"
         }
     ];
 
@@ -66,14 +62,14 @@ function Nav () {
             </Popover>
 
             {/* Nav bar in desktop view */}
-            <div className="hidden md:block h-16 w-full my-8 col-start-2 col-span-5 justify-items-center rounded-full shadow-3xl shadow-zinc-800 ring-1 ring-zinc-800/5 content-center bg-zinc-50 dark:bg-zinc-800">
-                <div className="w-content flex justify-around">
+            <div className="hidden md:block h-16 w-fit my-8 col-start-2 col-span-5 justify-items-center rounded-full shadow-3xl shadow-zinc-800 ring-1 ring-zinc-800/5 content-center bg-zinc-100 dark:bg-zinc-800">
+                <div className="w-content flex justify-around gap-x-16 p-4">
                 {
                     navOptions.map((item, index) => {
                         return (
                             <div key={index}>
                                 <Link href={item.href} className="text-center text-3xl text-black dark:text-zinc-50">
-                                    <p>{item.name}</p>
+                                    <p className="hover:text-purple-500/75">{item.name}</p>
                                 </Link>
                             </div>
                         )

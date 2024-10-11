@@ -2,7 +2,7 @@ import { TagIcon } from "@heroicons/react/24/solid";
 
 function ProjectCard ({project}) {
     return (
-        <div className="grid h-auto w-full rounded-xl content-between bg-zinc-50 dark:bg-zinc-800 p-4">
+        <div className="grid h-auto w-full rounded-xl content-between bg-zinc-100 dark:bg-zinc-800 p-4">
             <div>
                 <div className="grid md:flex items-center">
                     <h2 className="text-xl font-bold mr-2">{project.title}</h2>
@@ -18,10 +18,10 @@ function ProjectCard ({project}) {
            <div>
                 <div>
                     <a href={project.githubLink} target="blank">
-                        <i className="fa-brands fa-github text-xl mr-4 mt-4"></i>
+                        <i className="fa-brands fa-github text-xl mr-4 mt-4 hover:text-purple-500/75"></i>
                     </a>
                     {project.deployedLink ? <a href={project.deployedLink} target="blank">
-                        <i className="fa-solid fa-arrow-up-right-from-square text-xl mt-4"></i>
+                        <i className="fa-solid fa-arrow-up-right-from-square text-xl mt-4 hover:text-purple-500/75"></i>
                     </a> : <></>}
                 </div>
            </div>

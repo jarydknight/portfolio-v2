@@ -25,16 +25,16 @@ function ThemeToggleButton () {
 
     const currentTheme = theme === "system" ? systemTheme : theme;
     return (
-        <Popover className="my-8 mx-4 justify-self-end md:justify-self-center self-center">
-            <PopoverButton className="flex">
+        <Popover className="relative my-8 mx-4 justify-self-end md:justify-self-center self-center">
+            <PopoverButton className="flex hover:text-purple-500/75">
                 <p>Settings</p>
                 <Cog6ToothIcon className="size-6 ml-2" />
             </PopoverButton>
-            <PopoverPanel anchor="bottom" className="absolute backdrop-blur-lg p-2 rounded-xl mt-2">
+            <PopoverPanel  className="absolute left-0 backdrop-blur-lg p-2 my-2 rounded-xl mt-2">
                 {
                     themeOptions.map((item, index) => {
                         return (
-                            <CloseButton key={index} as="button" onClick={() => setTheme(item.name.toLowerCase())} className="flex my-2">
+                            <CloseButton key={index} as="button" onClick={() => setTheme(item.name.toLowerCase())} className="flex my-2 hover:text-purple-500/75">
                                 {item.icon}
                                 <p>{item.name}</p>
                             </CloseButton>

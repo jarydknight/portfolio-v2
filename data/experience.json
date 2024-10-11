@@ -1,0 +1,30 @@
+[
+    {
+        "category": "work",
+        "items": [
+            {
+                "name": "Stand United Canada",
+                "info": "Software Developer",
+                "date": "2024 - Present",
+                "location": "Toronto"
+            },
+            {
+                "name": "Ontario Government",
+                "info": "Systems Officer",
+                "date": "2022 - Present",
+                "location": "Toronto"
+            }
+        ]
+    },
+    {
+        "category": "education",
+        "items": [
+            {
+                "name": "University of Toronto",
+                "info": "Full Stack Development",
+                "date": "2022 - 2022",
+                "location": "Toronto"
+            }
+        ]
+    }
+]
