@@ -20,7 +20,7 @@ function About () {
     ];
 
     const [selectedItem, setSelectedItem] = useState(0);
-console.log(selectedItem)
+    
     return (
         <div className="grid p-8 justify-start bg-zinc-50/50 dark:bg-black">
             <h1 className="text-5xl font-bold mb-4">Learn about Jaryd:</h1>

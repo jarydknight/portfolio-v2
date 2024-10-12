@@ -11,9 +11,9 @@ function ExperienceSection () {
                     category.items.map((item, index) => {
                         return (
                             <div key={index} className="grid my-2 h-fit">
-                                <div className="flex">
+                                <div className="flex items-center">
                                 {
-                                    category.category === "work" ?  <i className="fa-solid fa-briefcase h-6 w-6"></i> : <i className="fa-solid fa-graduation-cap h-6 w-6"></i>
+                                    category.category === "work" ?  <i className="fa-solid fa-briefcase"></i> : <i className="fa-solid fa-graduation-cap"></i>
                                 }
                                 <h3 className="text-lg font-medium ml-2">{item.name}</h3>
                                 </div>
