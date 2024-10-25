@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../../../public/images/lewis.jpg";
+import profilePic from "../../../public/images/IMG_1392.JPG";
 import Contact from "../contact/index";
 import ExperienceSection from "../experience";
 
@@ -20,7 +20,9 @@ function HeroSection () {
                     </p>
                 </div>
                 <ExperienceSection />
-                <Image src={profilePic} alt="Profile Pic" height={500} width={500} className="rounded-3xl p-4 order-1 md:order-2 justify-self-center md:justify-self-start"/>
+                <div className="order-1 md:order-2 justify-self-center rounded-3xl size-72 lg:size-96 overflow-clip border-8 border-zinc-100 dark:border-zinc-800">
+                    <Image src={profilePic} alt="Profile Pic" className="object-cover h-96 w-96"/>
+                </div>
                 <Contact />
         </div>
     )
