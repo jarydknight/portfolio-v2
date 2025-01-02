@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../../../public/images/IMG_0994.jpg";
+import profilePic from "../../../public/images/IMG_0994.JPG";
 import Contact from "../contact/index";
 import ExperienceSection from "../experience";
 
